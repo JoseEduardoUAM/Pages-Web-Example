@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Inter:wght@100;400&family=Montserrat:wght@100&family=Open+Sans:wght@300;500&family=Poppins:wght@100;300&family=Raleway:wght@100&family=Roboto+Slab:wght@100&family=Roboto:wght@100&family=Work+Sans:ital,wght@0,100;1,100&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.seccion img{
+    flex-basis: 600px;
+    height: 60vh;
+}
+
+.seccion div{
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.seccion div h2{
+    font-family: 'Biryani', sans-serif;
+    line-height: 1.1;
+}
+
+.seccion div p{
+    font-family: 'Inter', sans-serif;
+    text-align: justify;
+}
+
+.seccion:nth-child(1){
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+}
+
+.seccion:nth-child(2){
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+}
+
+.seccion:nth-child(3){
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.seccion:nth-child(3) h2, .seccion:nth-child(3) p{
+    color: #fff;
+}
+
+.seccion:nth-child(1) span{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    width: 30ch;
+    font-size: 25px;
+    color: #fff;
+    animation: typing 5s steps(34), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+.seccion:nth-child(3) span{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    width: 34ch;
+    font-size: 25px;
+    color: #fff;
+    animation: typing 2s steps(34), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from { width: 0; }
+}
+
+@keyframes blink{
+    50% { border-color: transparent; }
+}
+
+.imagenes{
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1000ms;
+}
+
+.imagenes.show{
+    transform: translateX(0);
+    opacity: 1;
+}
