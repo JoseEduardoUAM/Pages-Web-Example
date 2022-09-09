@@ -1,0 +1,35 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial;
+}
+
+.ilustracion{
+    display: block;
+    width: 30%;
+    height: 300px;
+}
+
+#azure{
+    transform: scale(0.5);
+    animation-name: moverNodo 1s 2s both;
+}
+
+#aws{
+    transform: scale(0.5);
+    animation: moverNodo 1s 2s both;
+}
+
+#cloud{
+    transform: scale(0.6);
+    animation: moverNodo 1s 3s both;
+}
+
+@keyframes moverNodo {
+    100%{
+        transform: unset;
+    }
+}
