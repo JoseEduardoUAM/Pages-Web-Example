@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Roboto:wght@300&display=swap');
+
+/*
+font-family: 'Biryani', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Biryani', sans-serif;
+    background-color: #f2f2f2f2;
+}
+
+.Contenedor{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-contenedor{
+    width: 100%;
+    display: flex;
+}
+
+.contenido-slider{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.contenido-slider > img{
+    width: 400px;
+}
+
+.contenido-slider > div{
+    width: 40%;
+}
+
+.contenido-slider h2{
+    font-weight: 300;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.contenido-slider a{
+    color: #fff;
+    background-color: #332863;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.contenido-slider:nth-child(1){
+    background: #332863;
+    color: #fff;
+}
+
+.contenido-slider:nth-child(6){
+    background: #332863;
+    color: #fff;
+}
+
+.contenido-slider:nth-child(2){
+    background: #6611a6;
+    color: #fff;
+}
+
+.contenido-slider:nth-child(4){
+    background: #6611a6;
+    color: #fff;
+}
+
+.contenido-slider:nth-child(5){
+    background: #ac2f9b;
+    color: #fff;
+}
+
+.contenido-slider:nth-child(1) a{
+    background: #1145a6;
+    color: #fff;
+}
+
+span{
+    display: block;
+    white-space: nowrap;
+    border-right: 5px solid #fff;
+    color: #fff;
+    width: 33ch;
+    font-size: 40px;
+    animation: escribiendo 4s steps(33) infinite alternate,
+                parpadeo 0.4s infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes escribiendo{
+    from {
+        width: 0;
+    }
+}
+
+@keyframes parpadeo{
+    70% {
+        border-color: transparent;
+    }
+}
+
+@media screen and ( max-width : 900px ){
+    .contenido-slider > img{
+        width: 250px;
+    }
+    .contenido-slider > div{
+        width: 40%;
+    }
+    .contenido-slider h2{
+        font-size: 23px;
+    }
+}
+
+@media screen and ( max-width : 600px ){
+    .contenido-slider{
+        flex-direction: column-reverse;
+    }
+    .contenido-slider > div{
+        width: 80%;
+    }
+}
